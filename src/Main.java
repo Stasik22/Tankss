@@ -35,38 +35,7 @@ public class Main extends JPanel{
         while(y !=BF_HEIGHT-64) {
             move( 2);
         }
-    }void moveUp() throws  Exception {
-        direction = 1;
-        while (y != 0) {
-            y--;
-
-            Thread.sleep(33);
-            repaint();
-        }
     }
-
-
-    void moveDown() throws  Exception {
-        direction = 2;
-        while (y != BF_HEIGHT - 64) {
-            y++;
-            Thread.sleep(33);
-        repaint();
-        }
-    }
-
-
-
-    void moveLeft() throws  Exception {
-        direction = 3;
-        while (x != 0) {
-            y--;
-
-            Thread.sleep(33);
-            repaint();
-        }
-    }
-
 
     public static void main(String[] args) throws Exception {
        Main main = new Main() ;
